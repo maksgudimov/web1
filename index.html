@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Нумерованный список</h2>
+    <ol>
+        <li id="first"> 
+            <a href="http://example.com">example.com</a>
+        </li id="second">
+        <li>
+            <a href="https://example.com">example.com</a>
+        </li>
+        <li>
+                <a href="ftp://yandex.ru/sunshine/file1.txt">FTP без авторизации</a>
+        </li>
+        <li>
+            <a href="ftp://test:password@admin.ru/cash/file2.txt">FTP с авторизацией</a>
+        </li>
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/Природа#История">Ссылка на фрагмент страницы некоторого сайта</a>
+        </li>
+        <li>
+            <a href="#first">Ссылка на фрагмент текущей страницы</a>
+        </li>
+        <li>
+            <a href="https://www.onlinestore.ru?product=t-shitt&color=white">Ссылка с двумя параметрами</a>
+        </li>
+        <nav>
+            <li>
+                <a href="http://streetbeat.com/contacts" title="Список ссылок основной навигации сайти">Ссылка на контакты</a> 
+            </li>
+        </nav>
+        <li>
+            <a>Без href</a>
+        </li>
+        <li>
+            <a href=" ">Пустой href</a>
+        </li>
+        <li>
+            <a href="http://framework.ru" rel="nofollow">Запрет на переход</a>
+        </li>
+        <li>
+            <noindex>
+                <a href="https://example.com/">Запрещена индексация</a>
+            </noindex>
+        </li>
+        <li>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <a href ="http://voluptassing.ru"> Voluptas </a>, quasi.
+            </p>
+        </li>
+        <li>
+                <a href="http://example.com"> <img src="image.jpg" alt="Example" width="50" height="50"> </a>
+        </li>
+        <li>
+            <img src="image.jpg" usemap="#figuri" alt="Доступны 2 области" width="300" height="300">
+            <map name="figuri">
+                <area shape = "rect" coords = "136,47,266,86" href = "red.html" alt = "квадратная область" >
+                <area shape = "circle" coords = "60,43,41" href = "green.html" alt = "круглая область" >
+            </map>
+        </li>
+        <li>
+            <a href="index.html">Ссылка 16</a>
+        </li>
+        <li>
+            <a href="about/about.html">Ссылка 17</a>
+        </li>
+        <li>
+            <a href="../index222.html">Ссылка 18</a>
+        </li>
+        <li>
+            <a href="../../cool.html">Ссылка 19</a>
+        </li>
+        <li>1
+            <a href="/">ссылка 20</a> 
+        </li>
+        <li>
+            <a href="/arr.html">Ссылка 21</a>
+        </li>
+
+    </ol>
+    <h1>Форма</h1>
+    <form action="/" method="POST">
+
+    <label>
+        Введите имя:<br />
+        <input name="field-name" value="Имя" />
+    </label><br />
+
+    <label>
+        Введи e-mail:<br />
+        <input name="field-email" value="example@mail.ru" type="email" />       
+    </label><br />
+
+    <label>
+        Введи дату рождения:<br />
+        <input name="field-data" value="2021-09-10" type="date">
+    </label><br />
+    
+    Выбери пол:<br />
+    <label>
+        <input type="radio" checked="checked" name="radio-group-1" value="Мужской"> 
+        Мужской  
+    </label>
+    <label>
+        <input type="radio" name="radio-group-1" value="Женский">
+        Женский 
+    </label><br />
+
+    Выбери количество конечностей: <br />
+    <label>
+        <input type="radio" checked="checked" name="radio-group-2" value="2">
+        2
+    </label>
+    <label>
+        <input type="radio" name="radio-group-2" value="3">
+        3
+    </label>
+    <label>
+        <input type="radio" name="radio-group-2" value="4">
+        4
+    </label> <br />
+
+    <label>
+        Выбери сверхспособности:<br />
+        <select name="field-sverhspos[]" multiple="multiple">
+            <option value="Значение1" selected="selected">бессмертие</option>
+            <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+            <option value="Значение3">левитация</option>
+        </select>
+    </label> <br />
+
+    <label>
+        Расскажи о себе:<br />
+        <textarea name="field-biograf">Биография</textarea>
+    </label><br />
+
+    <label>
+        <input type="checkbox" checked="checked" name="check-1" />
+        C контрактом ознакомлен (а)
+    </label> <br />
+
+    <label>
+        <input type="submit" name="submit" value="Отправить">
+    </label>
+</form>
+
+</body>
+
+</html>
